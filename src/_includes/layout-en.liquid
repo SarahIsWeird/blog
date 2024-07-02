@@ -1,12 +1,11 @@
 ---
-title: Sarah's blog
 ---
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>{{ title }}</title>
+    <title>Sarah's blog{% if title %} | {{ title }}{% endif %}</title>
     <link rel="stylesheet" href="/style.css">
 </head>
 <body>

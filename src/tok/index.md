@@ -1,7 +1,3 @@
----
-title: lipu pi jan Sewa
----
-
 ## toki a! mi jan Sewa.
 
 lin lipu ni la mi toki lon ijo mute. ijo ni li nasa mute. :D
