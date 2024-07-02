@@ -1,0 +1,44 @@
+---
+title: Sarah's blog
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header>
+    <div class="menu">
+        <div class="menu-start">
+            <h1 style="margin-right: 1em;">Sarah's blog</h1>
+            <a href="/">Home</a>
+            <a href="/en/articles/">Articles</a>
+        </div>
+        <div class="menu-end">
+            <button id="dark-mode-button" role="switch"></button>
+            <a href="/tok/">
+                o tawa lipu pi toki pona
+            </a>
+        </div>
+    </div>
+    <hr />
+</header>
+<main>
+    {{ content }}
+</main>
+<footer>
+    <hr />
+    <div class="neocities-logo">
+        <a href="https://neocities.org">
+            <img src="/img/neocities.png" alt="Hosted by NeoCities" />
+        </a>
+    </div>
+</footer>
+<script src="/scripts/darkMode.js"></script>
+<script>initDarkMode('Dark mode', 'Light mode', 'Weird mode');</script>
+</body>
+</html>
+
