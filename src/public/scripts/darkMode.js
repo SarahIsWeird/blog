@@ -1,43 +1,54 @@
 const body = document.getElementsByTagName('body')[0];
-const darkModeButton = document.getElementById('dark-mode-button');
+const darkModeSelect = document.getElementById('dark-mode-select');
+const darkModePreference = window.matchMedia("(prefers-color-scheme: dark)");
 
-let state = 0;
-const states = 3;
-const DARK = 0;
-const LIGHT = 1;
-const WEIRD = 2;
+const states = [
+    'dark',
+    'light',
+    'weird',
+];
+
+let state = 'dark';
 
 let toggleDarkModeMessage = 'dark-on';
 let toggleLightModeMessage = 'light-on';
 let toggleWeirdModeMessage = 'weird-on';
 
-darkModeButton.addEventListener('click', function () {
-    setState((state + 1) % states);
+darkModeSelect.addEventListener('change', function (e) {
+    setState(e.target.value);
 });
 
 function setState(newState) {
+    if (!states.includes(newState)) {
+        console.error('[darkMode.js] setState called with invalid new state');
+        return;
+    }
+
     state = newState;
 
     switch (state) {
-        case DARK:
-            darkModeButton.innerHTML = toggleLightModeMessage;
+        case 'dark':
             body.classList.add('dark-mode');
             body.classList.remove('light-mode');
             body.classList.remove('weird-mode');
             break;
-        case LIGHT:
-            darkModeButton.innerHTML = toggleWeirdModeMessage;
+        case 'light':
             body.classList.add('light-mode');
             body.classList.remove('dark-mode');
             body.classList.remove('weird-mode');
             break;
-        case WEIRD:
-            darkModeButton.innerHTML = toggleDarkModeMessage;
+        case 'weird':
             body.classList.add('weird-mode');
             body.classList.remove('light-mode');
             body.classList.remove('dark-mode');
             break;
     }
+
+    window.localStorage.setItem('darkModeState', state);
+}
+
+function setDefault() {
+    setState(darkModePreference.matches ? 'dark' : 'light');
 }
 
 function initDarkMode(enableDarkMsg, enableLightMsg, enableWeirdMsg) {
@@ -45,10 +56,14 @@ function initDarkMode(enableDarkMsg, enableLightMsg, enableWeirdMsg) {
     toggleLightModeMessage = enableLightMsg;
     toggleWeirdModeMessage = enableWeirdMsg;
 
-    const darkModePreference = window.matchMedia("(prefers-color-scheme: dark)");
-    darkModePreference.addEventListener('change', function () {
-        setState(darkModePreference.matches ? DARK : LIGHT);
-    });
+    darkModePreference.addEventListener('change', () => setDefault());
 
-    setState(darkModePreference.matches ? DARK : LIGHT);
+    const savedPreference = window.localStorage.getItem('darkModeState');
+    if (savedPreference) {
+        setState(savedPreference);
+    } else {
+        setDefault();
+    }
+
+    darkModeSelect.value = state;
 }
