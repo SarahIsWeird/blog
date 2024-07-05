@@ -2,7 +2,7 @@
 title: o kama sona e nasin Kolin
 ---
 
-## o kama sona e nasin Kolin!
+## o kama sona e nasin Kolin! {#o-kama-sona-e-nasin-kolin}
 
 sina wile kama sona e nasin Kolin (*toki Inli: Kotlin*), taso sina ken toki pona taso. sina ken ala pali kepeken nasin
 ante.
@@ -16,7 +16,7 @@ mi wile toki e ni lon ni:
 
 sina lukin e sona ni la sina wile kama sona e nasin Kolin la sina ken open e ni: [o open pali](/tok/kt/o-open-pali)
 
-### nasin Kolin li seme?
+### nasin Kolin li seme? {#nasin-kolin-li-seme}
 
 nimi Kolin li tan [ma telo Kolin](https://en.wikipedia.org/wiki/Kotlin_Island) lon ma Losi. kulupu esun SePen
 (*toki Inli: JetBrains*) li pali e nasin Kolin, taso jan ale li ken lukin e lipu. ni la, sina wile ala pana e mani tawa
@@ -43,7 +43,7 @@ kulupu SePen li wile e ni tawa nasin Kolin:
 sina sona ala e nimi ala la o pilin ike ala. ni ale la nasin Kolin li nasin pona. taso sina pilin ante la, sina ken kama
 sona e nasin ante lon tenpo lili tan ni: sona nasin li lon!
 
-### sina o kama sona e nasin Kolin tan seme?
+### sina o kama sona e nasin Kolin tan seme? {#kama-sona-tan-seme}
 
 mi wile pana sona e nasin Kolin tan ni:
 
@@ -55,7 +55,7 @@ mi wile pana sona e nasin Kolin tan ni:
   lon tenpo kama.
 - ken ni li suli a! ni la, sina alasa e ken ala la lon li lili.
 
-### pali sona mi la seme li lon?
+### pali sona mi la seme li lon? {#pali-la-seme-li-lon}
 
 mi wile toki e ijo suli tan nasin Kolin tawa sina. taso pana sona taso la sina ken pilin ike. ni la, mi en sina li pali
 e musi e lipu pona tan ni: sina pilin pona tan kama sona!

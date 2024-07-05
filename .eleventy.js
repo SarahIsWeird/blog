@@ -5,6 +5,11 @@ module.exports = function(eleventyConfig) {
         'src/public/scripts': '/scripts',
     });
 
+    eleventyConfig.amendLibrary('md', (mdLib) =>
+        mdLib
+            .use(require('markdown-it-attrs'))
+            .use(require('markdown-it-anchor')));
+
     return {
         dir: {
             input: 'src',
