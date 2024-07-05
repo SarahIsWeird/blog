@@ -54,6 +54,12 @@ header, main, footer {
     padding: 1em;
 }
 
+main {
+    width: 75%;
+
+    margin: 0 auto;
+}
+
 article {
     margin: 0.5em;
     margin-top: 2em;
