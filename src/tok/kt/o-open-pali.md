@@ -42,12 +42,14 @@ taso sina wile kepeken ala. kepeken sitelen pi nimi ala (sama `!`, `#`, `?`, ...
 sitelen nimi (sama `k`, `o`, ...) la sina alasa ala e pakala. :) taso sina **ken** kepeken sitelen `-` a!
 
 lon leko "o pali e lipu Ki (*toki Inli: Git*)" la sina *ken* luka, taso sina *ken* luka ala. taso lon leko "ilo pali" la
-sina wile a luka e ilo Kete (*toki Inli: Gradle*)! ilo JDK li lon ala lon tenpo ni. ni la, sina o luka e leko la sina o
-luka e ni:
+sina wile a luka e ilo Kete (*toki Inli: Gradle*)! ilo JDK li lon ala lon tenpo ni. ni la, sina o luka e leko la, sina o
+luka e leko "o kama jo e ilo JDK" la sina o pali e ni:
 
 ![luka "o kama jo e ilo JDK"](/img/kt/jdk.png)
 
-nanpa li ken sama ala, taso ilo lipu o kama jo. sina pali e ni ale la sitelen o lukin sama ni:
+nanpa lili li ken sama ala, taso nanpa suli o sama (o lili tan) nanpa 21!
+
+sina pali e ni ale la sitelen o lukin sama ni:
 
 ![open lipu pona](/img/kt/project-settings.png)
 
