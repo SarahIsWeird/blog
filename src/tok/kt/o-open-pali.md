@@ -15,9 +15,9 @@ mani ala. ni la, sina tawa [lipu pi kulupu SePen](https://www.jetbrains.com/tool
 
 > kulupu ilo li ike a! mi wile ala e ona!
 
-sina ken kin kama jo e [ilo kepeken ala kulupu ilo](https://www.jetbrains.com/idea/download/). taso kulupu ilo li pona
-tan ni: sina wile pona e ilo la sina ken luka e leko lon kulupu ilo. ante la, sina kepeken ala kulupu ilo la sina o tawa
-linluwi tawa kama jo. mi la, kulupu ilo li pona. kulupu ilo musi li sama ala kulupu ilo ni!
+sina pilin ni la sina ken kin kama jo e [ilo kepeken ala kulupu ilo](https://www.jetbrains.com/idea/download/). taso
+kulupu ilo li pona tan ni: sina wile pona e ilo la sina ken luka e leko lon kulupu ilo. ante la, sina kepeken ala kulupu
+ilo la sina o tawa linluwi tawa kama jo. mi la, kulupu ilo li pona. kulupu ilo musi li sama ala kulupu ilo ni!
 
 sina pana e kulupu ilo tawa ilo sona sina la sina open e ona. kulupu ilo li lukin ni:
 
