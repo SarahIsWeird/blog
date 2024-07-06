@@ -66,4 +66,4 @@ musi en lipu pona...
 - ... li ilo lipu. ilo li ante e lipu tawa ni: sina ken lukin e lipu kepeken ilo linluwi.
 - ... li ijo ante mute!
 
-sina wile kama sona la sina o open lon [o open pali](/tok/kt/o-open-pali)!
+sina wile kama sona la o open lon [o open pali](/tok/kt/o-open-pali)!
