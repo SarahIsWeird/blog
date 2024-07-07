@@ -1,4 +1,5 @@
 const body = document.getElementsByTagName('body')[0];
+const prismStyleLink = document.getElementById('prism-theme');
 const darkModeSelect = document.getElementById('dark-mode-select');
 const darkModePreference = window.matchMedia("(prefers-color-scheme: dark)");
 
@@ -31,16 +32,19 @@ function setState(newState) {
             body.classList.add('dark-mode');
             body.classList.remove('light-mode');
             body.classList.remove('weird-mode');
+            prismStyleLink.href = '/prism-a11y-dark.css';
             break;
         case 'light':
             body.classList.add('light-mode');
             body.classList.remove('dark-mode');
             body.classList.remove('weird-mode');
+            prismStyleLink.href = '/prism-material-light.css';
             break;
         case 'weird':
             body.classList.add('weird-mode');
             body.classList.remove('light-mode');
             body.classList.remove('dark-mode');
+            prismStyleLink.href = '/prism-synthwave84.css';
             break;
     }
 
