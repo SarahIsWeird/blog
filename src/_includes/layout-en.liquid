@@ -1,17 +1,10 @@
 ---
+pageName: Sarah's blog
 ---
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Sarah's blog{% if title %} | {{ title }}{% endif %}</title>
-    <link rel="stylesheet" href="/style.css">
-    <link rel="preload" as="style" href="/prism-material-light.css">
-    <link rel="preload" as="style" href="/prism-a11y-dark.css">
-    <link rel="preload" as="style" href="/prism-synthwave84.css">
-    <link id="prism-theme" rel="stylesheet">
-</head>
+{% include './blocks/head' %}
 <body>
 <header>
     <div class="menu">
@@ -39,16 +32,8 @@
 <main>
     {{ content }}
 </main>
-<footer>
-    <hr />
-    <div class="neocities-logo">
-        <a href="https://neocities.org">
-            <img src="/img/neocities.png" alt="Hosted by NeoCities" />
-        </a>
-    </div>
-</footer>
+{% include './blocks/footer' %}
 <script src="/scripts/darkMode.js"></script>
 <script>initDarkMode('Dark mode', 'Light mode', 'Weird mode');</script>
 </body>
 </html>
-
