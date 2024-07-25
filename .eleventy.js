@@ -3,6 +3,7 @@ const eleventyPluginSyntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighl
 const markdownItAttrs = require('markdown-it-attrs');
 const markdownItAnchor = require('markdown-it-anchor');
 const markdownItContainer = require('markdown-it-container');
+const markdownItFootnote = require('markdown-it-footnote');
 
 module.exports = function(eleventyConfig) {
     eleventyConfig.addGlobalData('eleventyComputed.permalink', function() {
@@ -53,7 +54,8 @@ module.exports = function(eleventyConfig) {
 
                     return `<details><summary>${summaryText}</summary>\n`;
                 }
-            }));
+            })
+            .use(markdownItFootnote));
 
     return {
         dir: {

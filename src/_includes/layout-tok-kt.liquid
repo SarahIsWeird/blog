@@ -1,0 +1,40 @@
+---
+pageName: lipu pi jan Sewa
+---
+
+<!DOCTYPE html>
+<html lang="en">
+{% include './blocks/head' %}
+<body>
+<header>
+    <div class="menu">
+        <div class="menu-start">
+            <h1 style="margin-right: 1em;">lipu pi jan Sewa</h1>
+            <a href="/tok/">tomo</a>
+            <a href="/tok/lipu/">lipu ale</a>
+            <a href="/tok/kt/">o kama sona e nasin Kotlin</a>
+        </div>
+        <div class="menu-end">
+            <label>
+                kule lipu
+                <select id="dark-mode-select">
+                    <option value="dark">pimeja</option>
+                    <option value="light">walo</option>
+                    <option value="weird">nasa</option>
+                </select>
+            </label>
+            <a href="/">
+                Read in English
+            </a>
+        </div>
+    </div>
+    <hr />
+</header>
+<main>
+    {{ content }}
+</main>
+{% include './blocks/footer' %}
+<script src="/scripts/darkMode.js"></script>
+<script>initDarkMode('o pimeja', 'o walo', 'o nasa');</script>
+</body>
+</html>
